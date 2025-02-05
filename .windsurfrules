@@ -1,17 +1,22 @@
-# Enforce a clean UI structure
-- Use Tailwind CSS best practices for responsiveness and spacing.
-- Keep reusable components modular and easy to maintain.
-- Ensure strong contrast for readability and accessibility.
+# General Project Rules
+- Use Next.js with Tailwind CSS for all styling.
+- Follow a grid-based layout for sponsor displays.
+- Use Framer Motion for subtle animations and transitions.
+- Ensure mobile responsiveness with Tailwind utilities.
 
-# Design Rules
-- Hero section must be visually engaging with a background image.
-- Navigation should be clear, sticky, and allow smooth scrolling.
-- CTAs should be prominent, styled buttons, and use brand colors.
+# Sponsor Showcase
+- Champion Sponsors ($5,000+) should be featured in a hero section.
+- Other sponsors should be displayed in a responsive grid.
+- Implement category filters (Champion, Eagle, Hole-in-One, All Sponsors).
+- Use hover effects with slight scaling and a soft shadow.
 
-# Code Structure
-- Store assets in `/public/assets` and reference them properly.
-- Use a consistent layout structure for sections.
-- Avoid unnecessary div nesting for a clean DOM.
+# Code Organization
+- Store reusable components in `/components/`
+- Store sponsor data in `/data/sponsors.json` (until Firebase is integrated)
+- Store images/logos in `/public/assets/sponsors/`
+- Fetch dynamic sponsor data via a function in `/lib/firebase.js` (future)
 
-# Deployment
-- Ensure all components work responsively before deploying to Vercel.
+# Performance & Optimization
+- Optimize images before deployment.
+- Use Next.js <Image> component for better performance.
+- Ensure SEO-friendly metadata with `next-seo`.

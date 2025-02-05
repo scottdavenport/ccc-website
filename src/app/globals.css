@@ -23,15 +23,46 @@
 
 @layer components {
   .btn-primary {
-    @apply inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-primary hover:bg-primary/90 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg;
+    @apply inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-brand-primary hover:bg-brand-secondary rounded-lg transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5;
   }
 
   .btn-secondary {
-    @apply inline-flex items-center justify-center px-6 py-3 text-base font-medium text-primary bg-white border-2 border-primary hover:bg-primary-lighter rounded-lg transition-all duration-200 shadow-md hover:shadow-lg;
+    @apply inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-brand-secondary hover:bg-brand-accent rounded-lg transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5;
   }
 
   .nav-link {
-    @apply text-base font-medium text-gray-700 hover:text-primary transition-colors;
+    @apply text-base font-medium text-brand-secondary hover:text-brand-primary transition-colors;
+  }
+
+  /* Sponsor Carousel Styles */
+  .sponsor-carousel .slick-dots {
+    @apply bottom-0 relative mt-8;
+  }
+
+  .sponsor-carousel .slick-dots li button:before {
+    @apply text-brand-primary opacity-25;
+  }
+
+  .sponsor-carousel .slick-dots li.slick-active button:before {
+    @apply text-brand-primary opacity-100;
+  }
+
+  .sponsor-carousel .slick-prev,
+  .sponsor-carousel .slick-next {
+    @apply z-10 w-10 h-10;
+  }
+
+  .sponsor-carousel .slick-prev:before,
+  .sponsor-carousel .slick-next:before {
+    @apply text-brand-primary text-2xl;
+  }
+
+  .sponsor-carousel .slick-prev {
+    @apply left-0;
+  }
+
+  .sponsor-carousel .slick-next {
+    @apply right-0;
   }
 
   .section-padding {

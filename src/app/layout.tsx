@@ -1,18 +1,17 @@
 import type { Metadata } from 'next'
 import { Inter, Poppins } from 'next/font/google'
+import Navigation from '@/components/layout/Navigation'
 import './globals.css'
 
 const inter = Inter({ 
   subsets: ['latin'],
   variable: '--font-inter',
-  display: 'swap',
 })
 
 const poppins = Poppins({
-  weight: ['400', '500', '600', '700'],
   subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
   variable: '--font-poppins',
-  display: 'swap',
 })
 
 export const metadata: Metadata = {
@@ -26,8 +25,13 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={`${inter.variable} ${poppins.variable} font-sans`}>
+    <html lang="en" className="scroll-smooth">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+      </head>
+      <body className={`${inter.variable} ${poppins.variable} min-h-screen bg-white`}>
+        <Navigation />
         {children}
       </body>
     </html>

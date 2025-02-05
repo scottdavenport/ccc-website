@@ -1,44 +1,17 @@
-project: Craven Cancer Classic
-description: A modern, light-themed website for a nonprofit golf tournament supporting the Carolina East Foundation, built with Next.js, React, TailwindCSS, and deployed on Vercel.
+# Enforce a clean UI structure
+- Use Tailwind CSS best practices for responsiveness and spacing.
+- Keep reusable components modular and easy to maintain.
+- Ensure strong contrast for readability and accessibility.
 
-rules:
-  framework: Next.js
-  styling: TailwindCSS
-  hosting: Vercel
-  auth: Firebase Auth
-  storage: Cloudinary or Firebase Storage
-  admin_portal: true
+# Design Rules
+- Hero section must be visually engaging with a background image.
+- Navigation should be clear, sticky, and allow smooth scrolling.
+- CTAs should be prominent, styled buttons, and use brand colors.
 
-features:
-  homepage:
-    hero_section: true
-    event_countdown: true
-    donation_cta: true
+# Code Structure
+- Store assets in `/public/assets` and reference them properly.
+- Use a consistent layout structure for sections.
+- Avoid unnecessary div nesting for a clean DOM.
 
-  sponsors:
-    sponsor_carousel: true
-    sponsor_upload: true
-    admin_controlled: true
-
-  tournament_info:
-    event_details: true
-    honoree_section: true
-
-  photo_upload:
-    enabled: true
-    requires_admin_approval: true
-
-  donation_impact:
-    enabled: true
-    funds_raised_section: true
-
-design:
-  theme: light
-  primary_colors: ["#6EA6B4", "#A3BBC8", "#E0EAF1"]
-  typography:
-    headings: Poppins
-    body: Inter
-
-security:
-  admin_portal_protected: true
-  auth_provider: Firebase
+# Deployment
+- Ensure all components work responsively before deploying to Vercel.

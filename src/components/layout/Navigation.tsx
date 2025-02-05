@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState, useEffect } from 'react';
 
 export default function Navigation() {
@@ -17,16 +18,22 @@ export default function Navigation() {
   return (
     <nav 
       className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white/95 backdrop-blur-sm shadow-lg py-3' : 'bg-transparent py-5'
+        isScrolled ? 'bg-white/95 backdrop-blur-sm shadow-lg py-3' : 'bg-transparent py-6'
       }`}
     >
       <div className="container-width px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <Link 
             href="/" 
-            className="font-heading text-2xl font-bold text-gray-900 hover:text-primary transition-colors"
+            className="relative w-72 h-20 hover:opacity-90 transition-opacity"
           >
-            Craven Cancer Classic
+            <Image
+              src="/assets/ccc-logo.svg"
+              alt="Craven Cancer Classic"
+              fill
+              className="object-contain object-left"
+              priority
+            />
           </Link>
           
           <div className="hidden md:flex items-center space-x-8">
@@ -42,7 +49,7 @@ export default function Navigation() {
             <Link href="#contact" className="nav-link">
               Contact
             </Link>
-            <Link href="/donate" className="btn-primary !py-2 !px-4">
+            <Link href="/donate" className="btn-primary !py-2 !px-6">
               Donate Now
             </Link>
           </div>

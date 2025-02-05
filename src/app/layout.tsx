@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import { Inter, Poppins } from 'next/font/google'
 import Navigation from '@/components/layout/Navigation'
 import './globals.css'
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
 
 const inter = Inter({ 
   subsets: ['latin'],

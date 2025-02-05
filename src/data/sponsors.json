@@ -1,0 +1,91 @@
+{
+  "sponsorTiers": [
+    {
+      "tier": "Champion Sponsors",
+      "amount": 5000,
+      "sponsors": [
+        { "name": "Fuel Market", "logo": "/assets/sponsors/placeholder.webp", "link": "#" },
+        { "name": "Carolina East", "logo": "/assets/sponsors/placeholder.webp", "link": "#" }
+      ]
+    },
+    {
+      "tier": "Eagle Sponsors",
+      "amount": 2500,
+      "sponsors": [
+        { "name": "Sample Eagle 1", "logo": "/assets/sponsors/placeholder.webp", "link": "#" },
+        { "name": "Sample Eagle 2", "logo": "/assets/sponsors/placeholder.webp", "link": "#" }
+      ]
+    },
+    {
+      "tier": "Golf Gift Sponsors",
+      "amount": 2500,
+      "sponsors": [
+        { "name": "Golf Gift 1", "logo": "/assets/sponsors/placeholder.webp", "link": "#" },
+        { "name": "Golf Gift 2", "logo": "/assets/sponsors/placeholder.webp", "link": "#" }
+      ]
+    },
+    {
+      "tier": "Celebration Lunch Sponsors",
+      "amount": 2000,
+      "sponsors": [
+        { "name": "Lunch Sponsor 1", "logo": "/assets/sponsors/placeholder.webp", "link": "#" }
+      ]
+    },
+    {
+      "tier": "Golf Cart Sponsors",
+      "amount": 1500,
+      "sponsors": [
+        { "name": "Cart Sponsor 1", "logo": "/assets/sponsors/placeholder.webp", "link": "#" }
+      ]
+    },
+    {
+      "tier": "Bloody Mary Sponsors",
+      "amount": 1000,
+      "sponsors": [
+        { "name": "Bloody Mary 1", "logo": "/assets/sponsors/placeholder.webp", "link": "#" }
+      ]
+    },
+    {
+      "tier": "Pav Sponsors",
+      "amount": 1500,
+      "sponsors": [
+        { "name": "Pav Sponsor 1", "logo": "/assets/sponsors/placeholder.webp", "link": "#" }
+      ]
+    },
+    {
+      "tier": "Thursday Night Sponsors",
+      "amount": 700,
+      "sponsors": [
+        { "name": "Thursday 1", "logo": "/assets/sponsors/placeholder.webp", "link": "#" }
+      ]
+    },
+    {
+      "tier": "Wall Sponsors",
+      "amount": 700,
+      "sponsors": [
+        { "name": "Wall Sponsor 1", "logo": "/assets/sponsors/placeholder.webp", "link": "#" }
+      ]
+    },
+    {
+      "tier": "One-Hole Sponsors",
+      "amount": 500,
+      "sponsors": [
+        { "name": "Hole Sponsor 1", "logo": "/assets/sponsors/placeholder.webp", "link": "#" }
+      ]
+    },
+    {
+      "tier": "Bocce Sponsors",
+      "amount": 500,
+      "sponsors": [
+        { "name": "Bocce Sponsor 1", "logo": "/assets/sponsors/placeholder.webp", "link": "#" }
+      ]
+    },
+    {
+      "tier": "Hole-In-One Sponsors",
+      "amount": null,
+      "sponsors": [
+        { "name": "Hole-In-One 1", "logo": "/assets/sponsors/placeholder.webp", "link": "#" }
+      ]
+    }
+  ]
+}
